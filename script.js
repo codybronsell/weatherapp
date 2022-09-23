@@ -19,7 +19,7 @@ CODYWEATHER.Events = {
       CODYWEATHER.LocalStorage.currentSrchHist = JSON.parse(localStorage.getItem("prevCityWeatherSrch"));
       CODYWEATHER.Functions.renderLastCity(CODYWEATHER.LocalStorage.currentSrchHist[0]);
     }
-    CODYWEATHER.Functions.dispalySearchHist();
+    
     var searchBtn = $("#searchBtn");
 
     $(document).on("click", ".prvCity", function (e) {
@@ -184,8 +184,8 @@ CODYWEATHER.Functions = {
     if (localStorage.getItem("prevCityWeatherSrch") === null) {
       localStorage.setItem("prevCityWeatherSrch", "[]");
     } else if (localStorage.getItem("prevCityWeatherSrch") === "[]") {
-      return;
     }
+    CODYWEATHER.Functions.dispalySearchHist();
   },
   renderLastCity: function (lastCity) {
     var cityName = lastCity;
