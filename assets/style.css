@@ -1,0 +1,112 @@
+html, body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    height: 100%;
+}
+.searchContainer {
+    border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.21); 	
+}
+
+h1 {
+    color: white;
+    padding: 10px;
+}
+
+img#weatherImage {
+    max-width: 100px;
+}
+button.prvCity {
+    width: 100%;
+    background: #0c8495;
+    border: none;
+    color: white;
+}
+
+.prvCity {
+    width: 100%;
+    background: #0c8495;
+    border: none;
+    color: white;
+}
+
+.col.forecast-square {
+    border: 1px #eee solid;
+    margin: 1px 5px;
+    padding: 10px;
+    box-shadow: 0 0 1px rgb(0 0 0 / 21%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.col.forecast-square p {
+    margin: 0;
+    font-size: 12px;
+}
+.weatericonmain {
+    max-width: 200px;
+    position: absolute;
+    right: 0;
+}
+.weatericon {
+    max-width: 100px;
+}
+#currentCity {
+	
+	position: relative;
+    border: 1px solid #eee;
+	border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.21); 
+}
+
+#forecast {
+    padding: 5px;
+    margin: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.btn-info{
+    margin: 2.5px;
+}
+
+.low-uvi {
+    background-color: green;
+    padding: 4px;
+    border-radius: 25%;
+}
+
+.moderate-uvi {
+    background-color: yellow;
+    padding: 4px;
+    border-radius: 25%;
+}
+
+.high-uvi {
+    background-color: orange;
+    padding: 4px;
+    border-radius: 25%;
+}
+
+.very-high-uvi {
+    background-color: red;
+    padding: 4px;
+    border-radius: 25%;
+}
+
+.extreme-uvi {
+    background-color: purple;
+    padding: 4px;
+    border-radius: 25%;
+}
+
+.forecast-square {
+    border: 5px solid black;
+}
