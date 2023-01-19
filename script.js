@@ -7,7 +7,6 @@ CODYWEATHER.Api = {
   apiKey: "efdf01630b977f37ebfe4c723702c124"
 }
 
-
 CODYWEATHER.LocalStorage = {
   currentSrchHist: JSON.parse(localStorage.getItem("prevCityWeatherSrch"))
 }
