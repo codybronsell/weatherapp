@@ -15,20 +15,7 @@
         <h1>Cody Weather App</h1>
     </header>
     <div class="container">
-        <div class="row">
-            <div class="container col-3 searchContainer">
-                <div class="container">
-                    <h2>search a city</h2>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="city name" id="userInput" aria-label=""
-                            aria-describedby="button-addon2">
-                        <button type="button" class="btn btn-success" id="searchBtn"><i
-                                class="fa fa-search"></i></button>
-                    </div>
-                </div>
-                <div id="searchHistory" class="container">
-                </div>
-            </div>
+        <div class="row"> 
             <div class="col-9">
                 <div class="row hide" id="currentCity">
                     <h3 id="currentCityInfo">
@@ -40,6 +27,19 @@
                     <p id="currentUvi"></p>
                 </div>
                 <div class="row hide" id="forecast">
+                </div>
+            </div>
+            <div class="container col-3 searchContainer">
+                <div class="container">
+                    <h2>search a city</h2>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="city name" id="userInput" aria-label=""
+                            aria-describedby="button-addon2">
+                        <button type="button" class="btn btn-success" id="searchBtn"><i
+                                class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <div id="searchHistory" class="container">
                 </div>
             </div>
         </div>
