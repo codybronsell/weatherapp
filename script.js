@@ -96,7 +96,7 @@ CODYWEATHER.Functions = {
       var currentCityWinSpeed = results.current.wind_speed;
       $("#currentWind").text("Wind Speed: " + currentCityWinSpeed + " MPH");
       var currentCityUvi = results.current.uvi;
-      6406ca836e96fe35d13d0645f945ad0b CODYWEATHER.Functions.uviIndexSeverity(currentCityUvi);
+      CODYWEATHER.Functions.uviIndexSeverity(currentCityUvi);
       CODYWEATHER.Functions.fiveDayForecast(results);
     });
   },
