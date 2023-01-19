@@ -25,8 +25,8 @@ CODYWEATHER.Events = {
     $(document).on("click", ".prvCity", function (e) {
       e.preventDefault();
       var cityName = $(this).attr("id");
-      var apiKey = "6406ca836e96fe35d13d0645f945ad0b";
-      var queryURL = CODYWEATHER.Api.enpoint + "q=" + cityName + "&cnt=5&units=imperial&appid=" + apiKey;
+      var apiWeatherKey = "b551d84abc5fc1204c60cf111070a47a";
+      var queryURL = CODYWEATHER.Api.enpoint + "q=" + cityName + "&cnt=5&units=imperial&appid=" + apiWeatherKey;
       $.ajax({
         url: queryURL,
         method: "GET"
@@ -38,8 +38,8 @@ CODYWEATHER.Events = {
     searchBtn.on("click", function (e) {
       e.preventDefault();
       var cityName = $("#userInput").val();
-      var apiKey = "6406ca836e96fe35d13d0645f945ad0b";
-      var queryURL = CODYWEATHER.Api.enpoint + "q=" + cityName + "&cnt=5&units=imperial&appid=" + apiKey;
+      var apiWeatherKey = "b551d84abc5fc1204c60cf111070a47a";
+      var queryURL = CODYWEATHER.Api.enpoint + "q=" + cityName + "&cnt=5&units=imperial&appid=" + apiWeatherKey;
       $.ajax({
         url: queryURL,
         method: "GET"
@@ -187,8 +187,8 @@ CODYWEATHER.Functions = {
   },
   renderLastCity: function (lastCity) {
     var cityName = lastCity;
-    var apiKey = "6406ca836e96fe35d13d0645f945ad0b";
-    var queryURL3 = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&cnt=5&units=imperial&appid=" + apiKey;
+    var apiWeatherKey = "b551d84abc5fc1204c60cf111070a47a";
+    var queryURL3 = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&cnt=5&units=imperial&appid=" + apiWeatherKey;
     $.ajax({
       url: queryURL3,
       method: "GET"
