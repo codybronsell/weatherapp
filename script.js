@@ -83,8 +83,8 @@ CODYWEATHER.Functions = {
   },
 
   findWithCoords: function (currentCityCoLat, currentCityCoLon) {
-    var apiKey = "6406ca836e96fe35d13d0645f945ad0b";
-    var queryURL2 = "https://api.openweathermap.org/data/2.5/onecall?lat=" + currentCityCoLat + "&lon=" + currentCityCoLon + "&exclude=minutely,hourly&units=imperial&appid=" + apiKey;
+    var apiWeatherKey = "b551d84abc5fc1204c60cf111070a47a";
+    var queryURL2 = "https://api.openweathermap.org/data/2.5/onecall?lat=" + currentCityCoLat + "&lon=" + currentCityCoLon + "&exclude=minutely,hourly&units=imperial&appid=" + apiWeatherKey;
     $.ajax({
       url: queryURL2,
       method: "GET"
@@ -96,7 +96,7 @@ CODYWEATHER.Functions = {
       var currentCityWinSpeed = results.current.wind_speed;
       $("#currentWind").text("Wind Speed: " + currentCityWinSpeed + " MPH");
       var currentCityUvi = results.current.uvi;
-      CODYWEATHER.Functions.uviIndexSeverity(currentCityUvi);
+      6406ca836e96fe35d13d0645f945ad0b CODYWEATHER.Functions.uviIndexSeverity(currentCityUvi);
       CODYWEATHER.Functions.fiveDayForecast(results);
     });
   },
