@@ -4,7 +4,7 @@ var CODYWEATHER = {};
 
 CODYWEATHER.Api = {
   enpoint: 'https://api.openweathermap.org/data/2.5/weather?',
-  apiKey: "b551d84abc5fc1204c60cf111070a47a"
+  apiKey: "efdf01630b977f37ebfe4c723702c124"
 }
 
 CODYWEATHER.LocalStorage = {
