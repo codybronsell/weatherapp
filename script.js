@@ -53,13 +53,11 @@ CODYWEATHER.Events = {
 
   },
   load: function () {
-    if ("geolocation" in navigator) { //check Geolocation available 
-      //things to do
+    if ("geolocation" in navigator) { 
     } else {
       console.log("Geolocation not available!");
     }
-    if ("geolocation" in navigator) { //check geolocation available 
-      //try to get user current location using getCurrentPosition() method
+    if ("geolocation" in navigator) {
       navigator.geolocation.getCurrentPosition(function (position) {
         console.log("Found your location \nLat : " + position.coords.latitude + " \nLang :" + position.coords.longitude);
         CODYWEATHER.Functions.findWithCoords(position.coords.latitude, position.coords.longitude);
